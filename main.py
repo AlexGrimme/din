@@ -191,7 +191,7 @@ def run_game(genomes, config):
     dname_font = pygame.font.SysFont("Roboto Condensed", 30)
     heading_font = pygame.font.SysFont("Roboto Condensed", 70)
 
-    # dinosaurs = [Dino(30, height-170, "subaru", "Howdy")]
+    # dinosaurs = [Dino(30, height-170, "subaru", "Олександр")]
 
     BackGround = Background("sprites/background.png", [0,0])
     # the loop
@@ -286,7 +286,7 @@ def run_game(genomes, config):
         for i, dinosaur in enumerate(dinosaurs):
             dname_label = dname_font.render(dinosaur.name, True, (255,255,0))
             dname_label_rect = dname_label.get_rect()
-            dname_label_rect.center = (width - 100, 100 + (i * 25))
+            dname_label_rect.center = (width - 130, 100 + (i * 25))
             screen.blit(dname_label, dname_label_rect)
 
         # display generation
